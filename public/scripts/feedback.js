@@ -35,6 +35,7 @@ if (feedbackForm) {
       })
         .then((res) => res.json())
         .then((data) => {
+          console.log(`El valor de data es ${data}`)
           alert(data.status);
           email = '';
           feedback = '';
